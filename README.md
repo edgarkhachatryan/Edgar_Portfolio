@@ -10,11 +10,11 @@ The project is aiming to create a Deep Learning model electricity consumption fo
 DUQ provide electricity to the Allegheny and Beaver counties located in the eastern part of Pennsylvania, US inluding Pittsburgh city. AEP provides electricity to much broader territory, covering areas in Virginia, West Virginia, Ohio, Indiana, and Michigan.
 
 First dataset contains hourly consumptions from "2005-01-01 01:00:00" to "2018-08-03 00:00:00" or 119,068 records in total.  
-|     Datetime      |DUQ_MW |
-|       :---:       | :---: |
-|2005-01-01 01:00:00|1364.0 |
-|2005-01-01 02:00:00|1273.0 |
-|2018-08-03 00:00:00|1656.0 |
+|      Datetime       | DUQ_MW |
+|        :---:        | :---: |
+| 2005-01-01 01:00:00 | 1364.0 |
+| 2005-01-01 02:00:00 | 1273.0 |
+| 2018-08-03 00:00:00 | 1656.0 |
  
 Second dataset contains consumptions from "2004-10-01 01:00:00" to "2018-08-03 00:00:00" or 121,273  records.
 |     Datetime      |AEP_MW |
