@@ -24,7 +24,7 @@ Second dataset contains consumptions from "2004-10-01 01:00:00" to "2018-08-03 0
 |2018-08-03 00:00:00|14809.0|
 
 ### Exploratory visualizations
-
+![Electricity consumption plots, Duquesne Light.](/images/DUQ_cons1.png)(/images/DUQ_cons2.png)
 
 ![Electricity consumption plot for 2 weeks.](/images/TotalConsumptionPlot.png)
 
