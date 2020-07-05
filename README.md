@@ -25,15 +25,6 @@ Second dataset contains consumptions from "2004-10-01 01:00:00" to "2018-08-03 0
 | 2004-10-01 02:00:00 | 11935.0 |
 | 2018-08-03 00:00:00 | 14809.0 |
 
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
-
-|A|B|C|AA|
-| --- | --- | --- | --- |
-|Q|W   |    E | RR     |
-
 ### Exploratory visualizations
 The following plots show the cyclic pattern of data. Moreover, cycles are seen on the daily and weekly basis as well as on seasonal (yearly) basis.
 ![Duquesne Light Electricity consumption 1st week.](/images/DUQ_cons1.png)
