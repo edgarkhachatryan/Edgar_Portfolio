@@ -26,10 +26,10 @@ Second dataset contains consumptions from "2004-10-01 01:00:00" to "2018-08-03 0
 | 2018-08-03 00:00:00 | 14809.0 |
 
 ### Exploratory visualizations
-The following plots show the cyclic pattern of data. Moreover, cycles are seen on the daily and weekly basis as well as on seasonal (yearly) basis.
+The following plots show the cyclic pattern of data. Moreover, cycles are seen on the daily and weekly basis.
 ![Duquesne Light Electricity consumption 1st week.](/images/DUQ_cons1.png)
 ![Duquesne Light Electricity consumption 2nd week.](/images/DUQ_cons2.png)
+
+Preliminary analysis of data shows seasonal nature of consumption as well as. Because, during summertime energy consumption increases. 
 ![Duquesne Light Electricity consumption for 2 years.](/images/DUQ_cons3.png)
 
-
-# [Project2]()
