@@ -33,3 +33,6 @@ The following plots show the cyclic pattern of data. Moreover, cycles are seen o
 Preliminary analysis of data shows seasonal nature of consumption as well as. Because, during summertime energy consumption increases. 
 ![Duquesne Light Electricity consumption for 2 years.](/images/DUQ_cons3.png)
 
+![](/images/DUQ_act_forecast.png)
+![](/images/DUQ_act_forecast_best.png)
+![](/images/DUQ_act_forecast_worst.png)
