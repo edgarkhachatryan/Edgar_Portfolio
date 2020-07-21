@@ -33,15 +33,17 @@ The following plots show the seasonal patterns of data. Here are reprsented the 
 Preliminary analysis of data shows seasonal nature of . Because, during summertime energy consumption increases. 
 ![Duquesne Light Electricity consumption for 2 years.](/images/DUQ_cons3.png)
 
-Before feeding consumption data to ML model is should be standardized, but since it has strong seasonality, average of data should be timewise. For that a columns should be added that represent the day of week and the hour of the day information.
+Before feeding consumption data to ML model is should be standardized, but since it has strong seasonality, average of data should be timewise. For that a column should be added that represent the day of week and the hour of the day information.
 
-| Datetime | Cons | WeekDayHour | 
+| Datetime | Cons | WeekDayHour* | 
 | :---: | :---: | :---: |
 | 2005-01-01 01:00:00 | 1364.0 | 5_01 |
 | 2005-01-01 02:00:00 | 1273.0 | 5_02 |
 | 2005-01-01 03:00:00 | 1218.0 | 5_03 |
 | 2005-01-01 04:00:00 | 1170.0 | 5_04 |
 | 2005-01-01 05:00:00 | 1166.0 | 5_05 |
+
+*Where fist digit represents the day of week and the last 2 the hour of the day.
 
 
 ![](/images/DUQ_act_forecast.png)
