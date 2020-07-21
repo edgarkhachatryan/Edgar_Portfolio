@@ -35,7 +35,7 @@ Preliminary analysis of data shows seasonal nature of . Because, during summerti
 
 Before feeding consumption data to ML model is should be standardized, but since it has strong seasonality, average of data should be timewise. For that a column should be added that represent the day of week and the hour of the day information.
 
-| Datetime | Cons | WeekDayHour* | meanCons** |
+| Datetime | Cons | WeekDayHour* | meanCons* |
 | :---: | :---: | :---: | :---: |
 | 2005-01-01 01:00:00 | 1364.0 | 5_01 | 1483.9 |
 | 2005-01-01 02:00:00 | 1273.0 | 5_02 | 1420.0 |
@@ -44,7 +44,7 @@ Before feeding consumption data to ML model is should be standardized, but since
 | 2005-01-01 05:00:00 | 1166.0 | 5_05 | 1346.5 |
 
 *Where fist digit represents the day of week and the last 2 the hour of the day.
-**Mean consumption is calculated as an average of all consumptions having the same WeekDayHour.
+*Mean consumption is calculated as an average of all consumptions having the same WeekDayHour.
 
 To standardise data th following formula is used: standadized value{i} = log(consumption{i}) - log(mean consumption{i}).
 
