@@ -35,15 +35,23 @@ Preliminary analysis of data shows seasonal nature of . Because, during summerti
 
 Before feeding consumption data to ML model is should be standardized, but since it has strong seasonality, average of data should be timewise. For that a column should be added that represent the day of week and the hour of the day information.
 
-| Datetime | Cons | WeekDayHour* | 
-| :---: | :---: | :---: |
-| 2005-01-01 01:00:00 | 1364.0 | 5_01 |
-| 2005-01-01 02:00:00 | 1273.0 | 5_02 |
-| 2005-01-01 03:00:00 | 1218.0 | 5_03 |
-| 2005-01-01 04:00:00 | 1170.0 | 5_04 |
-| 2005-01-01 05:00:00 | 1166.0 | 5_05 |
+| Datetime | Cons | WeekDayHour* | meanCons** |
+| :---: | :---: | :---: | :---: |
+| 2005-01-01 01:00:00 | 1364.0 | 5_01 | 1483.9 |
+| 2005-01-01 02:00:00 | 1273.0 | 5_02 | 1420.0 |
+| 2005-01-01 03:00:00 | 1218.0 | 5_03 | 1375.9 |
+| 2005-01-01 04:00:00 | 1170.0 | 5_04 | 1354.1 |
+| 2005-01-01 05:00:00 | 1166.0 | 5_05 | 1346.5 |
 
-*Where fist digit represents the day of week and the last 2 the hour of the day.
+* Where fist digit represents the day of week and the last 2 the hour of the day.
+** Mean consumption is calculated as an average of all consumptions having the same WeekDayHour.
+
+To standardise data th following formula is used: standadized value{i} = log(consumption{i}) - log(mean consumption{i}).
+
+### Model
+To predict 1 week ahead (168 hours) model employing previous 4 weeks data (672 hours). Training and test sets are selected as 52 weeks each. So, the input layer has 672 x 1 (1 variable) shape and the output layer has 168  neurons. To predict the confidence intervals as well, additional 2 output layers (for 90% and 10%) should be added. The training has been done on 70 epochs. The evolution of forecast based on mean absolute percentage error (MAPE) 
+
+
 
 
 ![](/images/DUQ_act_forecast.png)
