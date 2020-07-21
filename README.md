@@ -49,11 +49,18 @@ Before feeding consumption data to ML model is should be standardized, but since
 To standardise data th following formula is used: standadized value{i} = log(consumption{i}) - log(mean consumption{i}).
 
 ### Model
-To predict 1 week ahead (168 hours) model employing previous 4 weeks data (672 hours). Training and test sets are selected as 52 weeks each. So, the input layer has 672 x 1 (1 variable) shape and the output layer has 168  neurons. To predict the confidence intervals as well, additional 2 output layers (for 90% and 10%) should be added. The training has been done on 70 epochs. The evolution of forecast based on mean absolute percentage error (MAPE) 
+To predict 1 week ahead (168 hours) model employing previous 4 weeks data (672 hours). Training and test sets are selected as 52 weeks each. So, the input layer has 672 x 1 (1 variable) shape and the output layer has 168  neurons. To predict the confidence intervals as well, additional 2 output layers (for 90% and 10%) should be added. The training has been done on 70 epochs. The evolution of forecast based on mean absolute percentage error (MAPE), which is calculated by the following formula.
+
 ![](/images/mape.jpeg)
 
-
+The average MAPE for the first 3 months was 4.24%.
 
 ![](/images/DUQ_act_forecast.png)
+
+The best prediction with 2.63% MAPE is shown below.
+
 ![](/images/DUQ_act_forecast_best.png)
+
+The worst prediction with 5.97% MAPE is the following.
+
 ![](/images/DUQ_act_forecast_worst.png)
