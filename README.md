@@ -50,7 +50,7 @@ To standardise data th following formula is used: standadized value{i} = log(con
 
 ### Model
 To predict 1 week ahead (168 hours) model employing previous 4 weeks data (672 hours). Training and test sets are selected as 52 weeks each. So, the input layer has 672 x 1 (1 variable) shape and the output layer has 168  neurons. To predict the confidence intervals as well, additional 2 output layers (for 90% and 10%) should be added. The training has been done on 70 epochs. The evolution of forecast based on mean absolute percentage error (MAPE) 
-
+![](/images/mape.jpeg)
 
 
 
