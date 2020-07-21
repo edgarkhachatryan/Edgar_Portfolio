@@ -43,8 +43,8 @@ Before feeding consumption data to ML model is should be standardized, but since
 | 2005-01-01 04:00:00 | 1170.0 | 5_04 | 1354.1 |
 | 2005-01-01 05:00:00 | 1166.0 | 5_05 | 1346.5 |
 
-* Where fist digit represents the day of week and the last 2 the hour of the day.
-** Mean consumption is calculated as an average of all consumptions having the same WeekDayHour.
+*Where fist digit represents the day of week and the last 2 the hour of the day.
+**Mean consumption is calculated as an average of all consumptions having the same WeekDayHour.
 
 To standardise data th following formula is used: standadized value{i} = log(consumption{i}) - log(mean consumption{i}).
 
