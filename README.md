@@ -1,10 +1,10 @@
 ## [Time Series Forecast with horizon using electricity data](https://github.com/edgarkhachatryan/ExampleProjects/tree/master/ElectricityForecastWithTimeHorizon)
 
 ### Overview
-The project is aiming to create a Deep Learning model electricity consumption forecast using previous consumption level. The dataset was taken from PJM Interconnection LLC, which a regional transmission organization in the US. Dataset contains total provided electricity data for 12 companies in Megawatts. The current project uses consumption data for 2 companies:
+The project is aiming to create a Deep Learning model for electricity consumption forecast using previous consumption level. The dataset was taken from PJM Interconnection LLC, which a regional transmission organization in the US. Dataset contains total provided electricity data for 12 companies in Megawatts. The current project uses consumption data for 2 companies:
 1. Duquesne Light (DUQ) and,
 2. American Electric Power Co., Inc. (AEP).
-DUQ provide electricity to the Allegheny and Beaver counties located in the eastern part of Pennsylvania, US inluding Pittsburgh city. AEP provides electricity to much broader territory, covering areas in Virginia, West Virginia, Ohio, Indiana, and Michigan.
+DUQ provides electricity to the Allegheny and Beaver counties located in the eastern part of Pennsylvania, US (inluding Pittsburgh city). AEP provides electricity to much broader territory, covering areas in Virginia, West Virginia, Ohio, Indiana, and Michigan.
 
 First dataset contains hourly consumptions from "2005-01-01 01:00:00" to "2018-08-03 00:00:00" or 119,068 records in total.  
 
@@ -27,10 +27,10 @@ The following plots show the seasonal patterns of data. Here are reprsented the 
 ![Duquesne Light Electricity consumption 1st week.](/images/DUQ_cons1.png)
 ![Duquesne Light Electricity consumption 2nd week.](/images/DUQ_cons2.png)
 
-Preliminary analysis of data shows seasonal nature of . Because, during summertime energy consumption increases. 
+Preliminary analysis shows seasonal nature of the data.
 ![Duquesne Light Electricity consumption for 2 years.](/images/DUQ_cons3.png)
 
-Before feeding consumption data to ML model is should be standardized, but since it has strong seasonality, average of data should be timewise. For that a column should be added that represent the day of week and the hour of the day information.
+Before feeding consumption data to ML model, it should be standardized, but since the records have strong seasonality, average of data should be timewise. For that a column should be added that represent the day of week and the hour of the day information.
 
 | Datetime | Cons | WeekDayHour* | meanCons* |
 | :---: | :---: | :---: | :---: |
